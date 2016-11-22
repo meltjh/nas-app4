@@ -14,6 +14,7 @@
 		F0DAF2D61DE3194500FF1796 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DAF2D41DE3194500FF1796 /* Main.storyboard */; };
 		F0DAF2D81DE3194500FF1796 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0DAF2D71DE3194500FF1796 /* Assets.xcassets */; };
 		F0DAF2DB1DE3194500FF1796 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0DAF2D91DE3194500FF1796 /* LaunchScreen.storyboard */; };
+		F0FB23A91DE453BF00E5394D /* DatabaseHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0FB23A81DE453BF00E5394D /* DatabaseHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +79,7 @@
 		F0DAF2D71DE3194500FF1796 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0DAF2DA1DE3194500FF1796 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0DAF2DC1DE3194500FF1796 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0FB23A81DE453BF00E5394D /* DatabaseHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +131,7 @@
 				F0DAF2D01DE3194500FF1796 /* AppDelegate.swift */,
 				F0DAF2D21DE3194500FF1796 /* ViewController.swift */,
 				F0DAF2D41DE3194500FF1796 /* Main.storyboard */,
+				F0FB23A81DE453BF00E5394D /* DatabaseHelper.swift */,
 				F0B4FDDE1DE34362001F8270 /* TaskTableViewCell.swift */,
 				F0DAF2D71DE3194500FF1796 /* Assets.xcassets */,
 				F0DAF2D91DE3194500FF1796 /* LaunchScreen.storyboard */,
@@ -268,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0FB23A91DE453BF00E5394D /* DatabaseHelper.swift in Sources */,
 				F0DAF2D31DE3194500FF1796 /* ViewController.swift in Sources */,
 				F0DAF2D11DE3194500FF1796 /* AppDelegate.swift in Sources */,
 				F0B4FDDF1DE34362001F8270 /* TaskTableViewCell.swift in Sources */,
