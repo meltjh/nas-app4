@@ -13,6 +13,8 @@ class TaskTableViewCell: UITableViewCell {
     @IBOutlet weak var taskLabel: UILabel!
     
     private var cellInfo: [String: AnyObject] = [:]
+    
+    // Setting and accessing the celldata
     var cellData: [String: AnyObject] {
         get {
             return cellInfo
@@ -25,21 +27,18 @@ class TaskTableViewCell: UITableViewCell {
             if cellChecked {
                 strikeThrough()
             }
-            
         }
     }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
     
+    /// Strikes through the task string if it is checked.
     func strikeThrough() {
         let attribute: NSMutableAttributedString =  NSMutableAttributedString(string: self.taskLabel.text!)
         attribute.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attribute.length))

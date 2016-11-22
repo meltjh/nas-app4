@@ -38,10 +38,15 @@
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <action selector="add:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="MDA-EG-PjP"/>
+                                </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bM6-0N-gSt">
                                 <rect key="frame" x="321" y="88" width="38" height="30"/>
-                                <state key="normal" title="Add"/>
+                                <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.37564089849999999" green="0.55493037560000003" blue="0.54940942429999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
                                 <connections>
                                     <action selector="add:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NZw-4q-Wlj"/>
                                 </connections>
@@ -58,7 +63,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Task" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TEF-GJ-LJt">
-                                                    <rect key="frame" x="8" y="3" width="359" height="37"/>
+                                                    <rect key="frame" x="18" y="3" width="349" height="37"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
@@ -66,8 +71,8 @@
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="TEF-GJ-LJt" firstAttribute="top" secondItem="pJe-oL-Lbi" secondAttribute="top" constant="3" id="Cmj-dh-k55"/>
+                                                <constraint firstItem="TEF-GJ-LJt" firstAttribute="leading" secondItem="pJe-oL-Lbi" secondAttribute="leading" constant="18" id="Dx5-ug-tQg"/>
                                                 <constraint firstAttribute="bottom" secondItem="TEF-GJ-LJt" secondAttribute="bottom" constant="3" id="TvO-Vx-92X"/>
-                                                <constraint firstItem="TEF-GJ-LJt" firstAttribute="leading" secondItem="pJe-oL-Lbi" secondAttribute="leading" constant="8" id="a7f-OJ-nOq"/>
                                                 <constraint firstAttribute="trailing" secondItem="TEF-GJ-LJt" secondAttribute="trailing" constant="8" id="vZq-GG-ezY"/>
                                             </constraints>
                                         </tableViewCellContentView>
