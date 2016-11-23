@@ -40,7 +40,7 @@ class ViewController: UIViewController,  UITableViewDelegate, UITableViewDataSou
         
         return cell
     }
-
+    
     /// Adds the new task to the database and reloads the data and the TableView.
     @IBAction func add(_ sender: Any) {
         do {

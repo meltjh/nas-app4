@@ -29,11 +29,11 @@ class TaskTableViewCell: UITableViewCell {
             }
         }
     }
-
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
@@ -44,5 +44,5 @@ class TaskTableViewCell: UITableViewCell {
         attribute.addAttribute(NSStrikethroughStyleAttributeName, value: 2, range: NSMakeRange(0, attribute.length))
         self.taskLabel.attributedText = attribute
     }
-
+    
 }

@@ -27,18 +27,19 @@ class DatabaseHelper {
         }
     }
     
+    /// Database setup.
     private func setupDatabase() throws {
         let path = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true).first!
         
         do {
             db = try Connection("\(path)/db.sqlite3")
-//            try db?.run(tasks.drop())
             try createTable()
         } catch {
             throw error
         }
     }
     
+    /// Creates the table with columns for the id, task and whether the task is checked off.
     private func createTable() throws {
         do {
             try db!.run(tasks.create(ifNotExists: true) {
@@ -52,6 +53,7 @@ class DatabaseHelper {
         }
     }
     
+    /// Creates a row entry.
     func create(task: String) throws {
         let insert = tasks.insert(self.task <- task, self.checked <- false)
         
@@ -62,6 +64,7 @@ class DatabaseHelper {
         }
     }
     
+    /// Reads all the entries and creates an array with for each entry a dictionary.
     func read() throws -> [Dictionary<String, AnyObject>]{
         var results: [Dictionary<String, AnyObject>] = []
         
@@ -75,6 +78,7 @@ class DatabaseHelper {
         return results
     }
     
+    /// Updates the check status of a task in the database.
     func update(id: Int64, checked: Bool) throws {
         do {
             _ = try db!.run(tasks.filter(id == self.id).update(self.checked <- checked))
@@ -83,6 +87,7 @@ class DatabaseHelper {
         }
     }
     
+    /// Deletes the entry of a task from the database.
     func delete(id: Int64) throws {
         do {
             _ = try db!.run(tasks.filter(id == self.id).delete())
